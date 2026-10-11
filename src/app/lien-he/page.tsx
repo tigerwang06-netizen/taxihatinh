@@ -150,13 +150,13 @@ export default function LienHe() {
 </div>
 </div>
 
-<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="mailto:hotro@taxilukhachhatinh.vn">
+<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="mailto:hotro@taxilukhachhatinh.com">
 <div>
 <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all" style={{ backgroundColor: "rgb(232, 248, 240)", color: "rgb(0, 135, 68)" }}>
 <span className="material-symbols-outlined text-2xl">mail</span>
 </div>
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Email &amp; Hóa Đơn VAT</span>
-<h3 className="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">hotro@taxilukhachhatinh.vn</h3>
+<h3 className="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">hotro@taxilukhachhatinh.com</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Hỗ trợ đối soát chuyến, ký kết hợp đồng lữ hành và xuất hóa đơn điện tử.</p>
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between text-primary font-label-sm text-label-sm" style={{ color: "rgb(0, 135, 68)" }}>
@@ -459,7 +459,7 @@ export default function LienHe() {
               },
               {
                 q: "Cần hóa đơn đỏ VAT cho công ty thì liên hệ như thế nào?",
-                a: "Sau khi hoàn thành chuyến đi, quý khách chỉ cần gửi thông tin doanh nghiệp (Tên công ty, Mã số thuế, Email nhận hóa đơn) cho tổng đài qua Zalo 0812 444 555 hoặc email hotro@taxilukhachhatinh.vn. Chúng tôi sẽ phát hành và gửi Hóa đơn điện tử hợp lệ về email của quý công ty trong vòng 24 giờ làm việc.",
+                a: "Sau khi hoàn thành chuyến đi, quý khách chỉ cần gửi thông tin doanh nghiệp (Tên công ty, Mã số thuế, Email nhận hóa đơn) cho tổng đài qua Zalo 0812 444 555 hoặc email hotro@taxilukhachhatinh.com. Chúng tôi sẽ phát hành và gửi Hóa đơn điện tử hợp lệ về email của quý công ty trong vòng 24 giờ làm việc.",
               },
               {
                 q: "Tôi có thể đặt xe trước nhiều ngày cho chuyến công tác hay đám cưới không?",

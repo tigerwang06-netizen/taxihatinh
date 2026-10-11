@@ -71,11 +71,11 @@ export function SiteFooter() {
                 </li>
                 <li className="flex items-center gap-2">
                   <i className="fa-solid fa-envelope text-emerald-400"></i>
-                  <a href="mailto:hotro@taxilukhachhatinh.vn" className="hover:text-emerald-400 transition">hotro@taxilukhachhatinh.vn</a>
+                  <a href="mailto:hotro@taxilukhachhatinh.com" className="hover:text-emerald-400 transition">hotro@taxilukhachhatinh.com</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <i className="fa-solid fa-globe text-emerald-400"></i>
-                  <span>www.taxilukhachhatinh.vn</span>
+                  <span>www.taxilukhachhatinh.com</span>
                 </li>
               </ul>
             </div>

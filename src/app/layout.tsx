@@ -19,7 +19,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://taxihatinh.vn";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://taxilukhachhatinh.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

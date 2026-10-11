@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllArticles } from "@/data/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://taxihatinh.vn";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://taxilukhachhatinh.com";
   const currentDate = new Date();
 
   // Các trang tĩnh chính
