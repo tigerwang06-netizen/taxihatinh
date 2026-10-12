@@ -334,17 +334,17 @@ export default function BangGia() {
                 <div className="space-y-2.5 pt-2">
                   <a
                     className="w-full h-12 bg-primary hover:bg-[#008744] text-on-primary rounded-xl font-label-md text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
-                    href="tel:0812444555"
+                    href="tel:0963726995"
                   >
                     <span className="material-symbols-outlined text-lg">calendar_today</span>
                     <span>Đặt Xe Ngay Theo Giá Này</span>
                   </a>
                   <a
                     className="w-full h-11 bg-white hover:bg-surface-container-lowest text-primary rounded-xl font-label-md text-xs flex items-center justify-center gap-2 transition-all shadow-sm"
-                    href="tel:0812444555"
+                    href="tel:0963726995"
                   >
                     <span className="material-symbols-outlined text-base">phone_in_talk</span>
-                    <span>Gọi Tổng Đài Báo Giá: 0812 444 555</span>
+                    <span>Gọi Tổng Đài Báo Giá: 0963 726 995</span>
                   </a>
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function BangGia() {
 <span className="inline-block bg-[#e8f8f0] text-primary text-xs font-label-md font-bold px-2.5 py-1 rounded-full">Giảm 50%</span>
 </td>
 <td className="py-5 px-6 text-right">
-<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0812444555">
+<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0963726995">
 <span>Đặt Xe</span>
 <span className="material-symbols-outlined text-xs">call</span>
 </a>
@@ -429,7 +429,7 @@ export default function BangGia() {
 <span className="inline-block bg-[#e8f8f0] text-primary text-xs font-label-md font-bold px-2.5 py-1 rounded-full">Giảm 45%</span>
 </td>
 <td className="py-5 px-6 text-right">
-<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0812444555">
+<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0963726995">
 <span>Đặt Xe</span>
 <span className="material-symbols-outlined text-xs">call</span>
 </a>
@@ -455,7 +455,7 @@ export default function BangGia() {
 <span className="inline-block bg-[#e8f8f0] text-primary text-xs font-label-md font-bold px-2.5 py-1 rounded-full">Giảm 40%</span>
 </td>
 <td className="py-5 px-6 text-right">
-<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0812444555">
+<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0963726995">
 <span>Đặt Xe</span>
 <span className="material-symbols-outlined text-xs">call</span>
 </a>
@@ -484,7 +484,7 @@ export default function BangGia() {
 <span className="inline-block bg-[#e8f8f0] text-primary text-xs font-label-md font-bold px-2.5 py-1 rounded-full">Giảm 45%</span>
 </td>
 <td className="py-5 px-6 text-right">
-<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0812444555">
+<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#008744] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0963726995">
 <span>Đặt Xe</span>
 <span className="material-symbols-outlined text-xs">call</span>
 </a>
@@ -510,7 +510,7 @@ export default function BangGia() {
 <span className="inline-block bg-surface-container-high text-on-surface-variant text-xs font-label-md font-medium px-2.5 py-1 rounded-full">Ưu Đãi Hợp Đồng</span>
 </td>
 <td className="py-5 px-6 text-right">
-<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#007038] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0812444555">
+<a className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-[#007038] text-white text-xs font-label-md rounded-lg shadow-sm transition-all" href="tel:0963726995">
 <span>Báo Giá Nhanh</span>
 <span className="material-symbols-outlined text-xs">description</span>
 </a>
@@ -549,7 +549,7 @@ export default function BangGia() {
           </p>
 </div>
 <div className="shrink-0">
-<a className="inline-flex items-center gap-2 text-primary font-label-md text-sm hover:underline" href="tel:0812444555">
+<a className="inline-flex items-center gap-2 text-primary font-label-md text-sm hover:underline" href="tel:0963726995">
 <span>Xem thêm 20+ tuyến liên tỉnh khác</span>
 <span className="material-symbols-outlined text-base">arrow_forward</span>
 </a>
@@ -594,7 +594,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Tuyến Sân Bay Vinh</span>
 </a>
@@ -637,7 +637,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Tuyến Vũng Áng - Vinh</span>
 </a>
@@ -680,7 +680,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Tuyến Khám Bệnh</span>
 </a>
@@ -719,7 +719,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Tuyến Lễ Bái</span>
 </a>
@@ -758,7 +758,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Xe Đi Thiên Cầm</span>
 </a>
@@ -797,7 +797,7 @@ export default function BangGia() {
 </ul>
 </div>
 <div className="pt-6">
-<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:0963726995">
 <span className="material-symbols-outlined text-base">near_me</span>
 <span>Đặt Tuyến Hà Nội</span>
 </a>
@@ -848,7 +848,7 @@ export default function BangGia() {
 </li>
 </ul>
 </div>
-<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0963726995">
             Liên Hệ Thuê Có Tài
           </a>
 </div>
@@ -878,7 +878,7 @@ export default function BangGia() {
 </li>
 </ul>
 </div>
-<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0963726995">
             Xem Xe Tự Lái Sẵn Có
           </a>
 </div>
@@ -908,7 +908,7 @@ export default function BangGia() {
 </li>
 </ul>
 </div>
-<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0812444555">
+<a className="w-full py-2.5 bg-primary hover:bg-[#007038] text-white rounded-xl font-label-md text-xs text-center font-bold shadow-sm transition-all" href="tel:0963726995">
             Tư Vấn Xe Hoa Cưới Hỏi
           </a>
 </div>
@@ -963,7 +963,7 @@ export default function BangGia() {
 <span className="font-title text-sm md:text-base font-bold text-[#0a331c] block">Quy định hủy chuyến & thời gian chờ</span>
 <span className="font-body-sm text-body-sm text-on-surface-variant block">Quý khách có thể hủy lịch trình miễn phí trước giờ xuất phát 30 phút mà không mất bất kỳ chi phí nào.</span>
 </div>
-<a className="px-6 py-3 bg-white text-primary font-label-md text-xs rounded-xl shadow-sm hover:shadow transition-all shrink-0" href="tel:0812444555">
+<a className="px-6 py-3 bg-white text-primary font-label-md text-xs rounded-xl shadow-sm hover:shadow transition-all shrink-0" href="tel:0963726995">
           Chính Sách Hành Lý & Hủy Xe
         </a>
 </div>
@@ -1051,11 +1051,11 @@ export default function BangGia() {
             </p>
 </div>
 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
-<a className="h-14 px-8 bg-white text-[#008744] hover:bg-surface rounded-full font-label-md text-base font-bold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-all" href="tel:0812444555">
+<a className="h-14 px-8 bg-white text-[#008744] hover:bg-surface rounded-full font-label-md text-base font-bold flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-all" href="tel:0963726995">
 <span className="material-symbols-outlined text-2xl">call</span>
 <span>GỌI ĐIỆN BÁO GIÁ NGAY</span>
 </a>
-<a className="h-14 px-8 bg-transparent hover:bg-white/15 text-white border-2 border-white/80 rounded-full font-label-md text-base font-bold flex items-center justify-center gap-3 transition-all" href="https://zalo.me/0812444555" rel="noopener noreferrer" target="_blank">
+<a className="h-14 px-8 bg-transparent hover:bg-white/15 text-white border-2 border-white/80 rounded-full font-label-md text-base font-bold flex items-center justify-center gap-3 transition-all" href="https://zalo.me/0963726995" rel="noopener noreferrer" target="_blank">
 <span className="material-symbols-outlined text-2xl">chat</span>
 <span>CHAT ZALO NHẬN BÁO GIÁ</span>
 </a>

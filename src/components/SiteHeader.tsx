@@ -35,7 +35,7 @@ export function SiteHeader() {
           {/* Right Action & Socials */}
           <div className="flex items-center gap-2 sm:gap-3">
             <a
-              href="https://zalo.me/0812444555"
+              href="https://zalo.me/0963726995"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-800/90 hover:bg-white hover:text-emerald-800 text-white font-bold text-[10px] sm:text-[11px] transition shadow-xs"
@@ -159,15 +159,15 @@ export function SiteHeader() {
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0 ml-auto">
             <a
               className="bg-[#00a859] hover:bg-[#00904d] active:scale-95 text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-1.5 sm:gap-2.5 shadow-md hover:shadow-lg transition shrink-0"
-              href="tel:0812444555"
-              aria-label="Gọi ngay tổng đài 0812 444 555"
+              href="tel:0963726995"
+              aria-label="Gọi ngay tổng đài 0963 726 995"
             >
               <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/20 flex items-center justify-center text-white shrink-0">
                 <i className="fa-solid fa-phone-volume text-xs sm:text-sm animate-bounce"></i>
               </div>
               <div className="text-left">
                 <div className="text-xs sm:text-base font-black leading-none tracking-tight sm:tracking-wide">
-                  0812 444 555
+                  0963 726 995
                 </div>
                 <div className="text-[9px] sm:text-[10px] text-emerald-100 font-medium uppercase mt-0.5 hidden sm:block">
                   Tổng đài 24/7
@@ -224,7 +224,7 @@ export function SiteHeader() {
                 <i className="fa-solid fa-clock text-[#00a859]"></i> Phục vụ 24/7 toàn tỉnh
               </span>
               <a
-                href="https://zalo.me/0812444555"
+                href="https://zalo.me/0963726995"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#00a859] font-bold hover:underline flex items-center gap-1"

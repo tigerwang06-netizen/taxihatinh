@@ -267,7 +267,7 @@ export default function GioiThieu() {
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
 <span className="font-label-md text-label-md text-[#008744] font-bold">Từ 10.500đ / Km</span>
-<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0812444555" title="Gọi xe">
+<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0963726995" title="Gọi xe">
 <span className="material-symbols-outlined text-[20px]">call</span>
 </a>
 </div>
@@ -290,7 +290,7 @@ export default function GioiThieu() {
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
 <span className="font-label-md text-label-md text-[#008744] font-bold">Từ 12.500đ / Km</span>
-<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0812444555" title="Gọi xe">
+<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0963726995" title="Gọi xe">
 <span className="material-symbols-outlined text-[20px]">call</span>
 </a>
 </div>
@@ -313,7 +313,7 @@ export default function GioiThieu() {
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
 <span className="font-label-md text-label-md text-[#008744] font-bold">Giá Thỏa Thuận VIP</span>
-<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0812444555" title="Gọi xe">
+<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0963726995" title="Gọi xe">
 <span className="material-symbols-outlined text-[20px]">call</span>
 </a>
 </div>
@@ -336,7 +336,7 @@ export default function GioiThieu() {
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between">
 <span className="font-label-md text-label-md text-[#008744] font-bold">Giá Thuê Trọn Ngày Tốt</span>
-<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0812444555" title="Gọi xe">
+<a className="p-2 rounded-lg bg-[#00a651] text-white hover:bg-[#008744] transition-colors" href="tel:0963726995" title="Gọi xe">
 <span className="material-symbols-outlined text-[20px]">call</span>
 </a>
 </div>
@@ -402,7 +402,7 @@ export default function GioiThieu() {
 <div className="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 relative overflow-hidden">
 <span className="text-[#e8f8f0] font-bold text-3xl select-none leading-none">01</span>
 <div className="font-title text-title font-bold text-on-surface">Tiếp Nhận Yêu Cầu</div>
-<div className="font-body-sm text-body-sm text-on-surface-variant">Khách gọi tổng đài 0812 444 555 hoặc gửi điểm đón qua Zalo/Website.</div>
+<div className="font-body-sm text-body-sm text-on-surface-variant">Khách gọi tổng đài 0963 726 995 hoặc gửi điểm đón qua Zalo/Website.</div>
 </div>
 
 <div className="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1 relative overflow-hidden">
@@ -588,9 +588,9 @@ export default function GioiThieu() {
 <p className="font-body-sm text-body-sm text-on-surface-variant">Đón trả tận sảnh nhà ga, miễn phí chờ chuyến bay delay, trọn gói cầu đường không phụ phí.</p>
 </div>
 </div>
-<a className="px-space-md py-space-sm rounded-xl bg-[#00a651] text-white font-label-md text-label-md font-bold hover:bg-[#008744] transition-colors shrink-0 flex items-center gap-1.5 shadow-sm" href="tel:0812444555">
+<a className="px-space-md py-space-sm rounded-xl bg-[#00a651] text-white font-label-md text-label-md font-bold hover:bg-[#008744] transition-colors shrink-0 flex items-center gap-1.5 shadow-sm" href="tel:0963726995">
 <span className="material-symbols-outlined text-[18px]">call</span>
-          Đặt Xe Sân Bay 0812 444 555
+          Đặt Xe Sân Bay 0963 726 995
         </a>
 </div>
 </div>
@@ -614,16 +614,16 @@ export default function GioiThieu() {
 <div className="p-space-sm px-space-lg rounded-full bg-white/10 backdrop-blur-md flex items-center gap-space-sm my-space-xs border border-white/20">
 <span className="material-symbols-outlined text-amber-300 text-[24px]">call</span>
 <span className="font-headline-md text-headline-md font-bold text-white tracking-wide">
-          HOTLINE 24/7: 0812 444 555
+          HOTLINE 24/7: 0963 726 995
         </span>
 </div>
 
 <div className="flex flex-col sm:flex-row items-center gap-space-md w-full sm:w-auto mt-space-xs">
-<a className="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-white text-[#008744] font-label-md text-label-md font-bold shadow-lg hover:bg-emerald-50 transition-all flex items-center justify-center gap-2 transform active:scale-95" href="tel:0812444555">
+<a className="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-white text-[#008744] font-label-md text-label-md font-bold shadow-lg hover:bg-emerald-50 transition-all flex items-center justify-center gap-2 transform active:scale-95" href="tel:0963726995">
 <span className="material-symbols-outlined text-[20px]">local_taxi</span>
           ĐẶT XE NGAY BÂY GIỜ
         </a>
-<a className="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-white/15 backdrop-blur-md text-white font-label-md text-label-md font-bold hover:bg-white/25 transition-all flex items-center justify-center gap-2 transform active:scale-95 border border-white/30" href="https://zalo.me/0812444555" rel="noopener noreferrer" target="_blank">
+<a className="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-white/15 backdrop-blur-md text-white font-label-md text-label-md font-bold hover:bg-white/25 transition-all flex items-center justify-center gap-2 transform active:scale-95 border border-white/30" href="https://zalo.me/0963726995" rel="noopener noreferrer" target="_blank">
 <span className="material-symbols-outlined text-[20px]">chat</span>
           TƯ VẤN BÁO GIÁ QUA ZALO
         </a>

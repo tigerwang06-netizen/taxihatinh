@@ -22,7 +22,7 @@ export async function submitBooking(payload: BookingPayload) {
     console.error("Booking error:", error);
     return {
       success: false,
-      error: "Không thể kết nối đến máy chủ. Quý khách vui lòng gọi hotline 0812 444 555 để được hỗ trợ tức thì.",
+      error: "Không thể kết nối đến máy chủ. Quý khách vui lòng gọi hotline 0963 726 995 để được hỗ trợ tức thì.",
     };
   }
 }

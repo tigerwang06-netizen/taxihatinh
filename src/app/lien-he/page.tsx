@@ -105,13 +105,13 @@ export default function LienHe() {
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
 
-<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="tel:0812444555">
+<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="tel:0963726995">
 <div>
 <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all" style={{ backgroundColor: "rgb(232, 248, 240)", color: "rgb(0, 135, 68)" }}>
 <span className="material-symbols-outlined text-2xl">call</span>
 </div>
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Tổng Đài Khẩn Cấp 24/7</span>
-<h3 className="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">0812 444 555</h3>
+<h3 className="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">0963 726 995</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Gọi miễn phí, tài xế điều xe có mặt sau 5 - 10 phút toàn tỉnh.</p>
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between text-primary font-label-sm text-label-sm" style={{ color: "rgb(0, 135, 68)" }}>
@@ -120,13 +120,13 @@ export default function LienHe() {
 </div>
 </a>
 
-<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="https://zalo.me/0812444555" rel="noopener noreferrer" target="_blank">
+<a className="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between" href="https://zalo.me/0963726995" rel="noopener noreferrer" target="_blank">
 <div>
 <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all" style={{ backgroundColor: "rgb(232, 248, 240)", color: "rgb(0, 135, 68)" }}>
 <span className="material-symbols-outlined text-2xl">chat</span>
 </div>
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Zalo Điều Hành Trực Tuyến</span>
-<h3 className="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">0812 444 555</h3>
+<h3 className="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">0963 726 995</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Gửi định vị, báo giá trọn gói và xác nhận chuyến xe qua tin nhắn.</p>
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between text-primary font-label-sm text-label-sm" style={{ color: "rgb(0, 135, 68)" }}>
@@ -141,8 +141,8 @@ export default function LienHe() {
 <span className="material-symbols-outlined text-2xl">storefront</span>
 </div>
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Văn Phòng Điều Hành Chính</span>
-<h3 className="font-title text-title text-on-surface group-hover:text-primary transition-colors">45 Trần Phú, TP. Hà Tĩnh</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Phường Bắc Hà, Trung tâm điều phối các chuyến xe nội và ngoại tỉnh.</p>
+<h3 className="font-title text-title text-on-surface group-hover:text-primary transition-colors">86 Nguyễn Biểu, Thành Sen, Hà Tĩnh</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Trung tâm điều phối các chuyến xe nội và ngoại tỉnh.</p>
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between text-secondary font-label-sm text-label-sm">
 <span className="">Mở cửa 24/24h</span>
@@ -459,7 +459,7 @@ export default function LienHe() {
               },
               {
                 q: "Cần hóa đơn đỏ VAT cho công ty thì liên hệ như thế nào?",
-                a: "Sau khi hoàn thành chuyến đi, quý khách chỉ cần gửi thông tin doanh nghiệp (Tên công ty, Mã số thuế, Email nhận hóa đơn) cho tổng đài qua Zalo 0812 444 555 hoặc email hotro@taxilukhachhatinh.com. Chúng tôi sẽ phát hành và gửi Hóa đơn điện tử hợp lệ về email của quý công ty trong vòng 24 giờ làm việc.",
+                a: "Sau khi hoàn thành chuyến đi, quý khách chỉ cần gửi thông tin doanh nghiệp (Tên công ty, Mã số thuế, Email nhận hóa đơn) cho tổng đài qua Zalo 0963 726 995 hoặc email hotro@taxilukhachhatinh.com. Chúng tôi sẽ phát hành và gửi Hóa đơn điện tử hợp lệ về email của quý công ty trong vòng 24 giờ làm việc.",
               },
               {
                 q: "Tôi có thể đặt xe trước nhiều ngày cho chuyến công tác hay đám cưới không?",
@@ -508,11 +508,11 @@ export default function LienHe() {
         </p>
 </div>
 <div className="flex flex-col sm:flex-row items-center gap-space-md w-full md:w-auto shrink-0">
-<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-surface-container-lowest text-primary font-title text-title uppercase shadow-xl hover:bg-surface-container-low active:scale-95 transition-all" href="tel:0812444555" style={{ color: "rgb(0, 135, 68)" }}>
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-surface-container-lowest text-primary font-title text-title uppercase shadow-xl hover:bg-surface-container-low active:scale-95 transition-all" href="tel:0963726995" style={{ color: "rgb(0, 135, 68)" }}>
 <span className="material-symbols-outlined text-2xl text-primary">call</span>
-<span className="">Gọi 0812 444 555</span>
+<span className="">Gọi 0963 726 995</span>
 </a>
-<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-primary/30 hover:bg-primary/50 text-surface-container-lowest font-title text-title uppercase border border-surface-container-lowest/30 transition-all" href="https://zalo.me/0812444555" rel="noopener noreferrer" target="_blank">
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-primary/30 hover:bg-primary/50 text-surface-container-lowest font-title text-title uppercase border border-surface-container-lowest/30 transition-all" href="https://zalo.me/0963726995" rel="noopener noreferrer" target="_blank">
 <span className="material-symbols-outlined text-2xl">chat</span>
 <span className="">Nhắn Tin Zalo</span>
 </a>

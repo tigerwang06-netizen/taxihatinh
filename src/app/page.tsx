@@ -319,7 +319,7 @@ export default function Home() {
 <img alt="Taxi 4 cho Ha Tinh" className="w-full object-contain h-36" src="/images/4.jpg"/>
 </div>
 </div>
-<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0812444555">
+<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0963726995">
           ĐẶT XE NGAY
         </a>
 </div>
@@ -340,7 +340,7 @@ export default function Home() {
 <img alt="Thue xe tu lai Ha Tinh" className="w-full object-contain h-36" src="/images/5.jpg"/>
 </div>
 </div>
-<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0812444555">
+<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0963726995">
           THUÊ NGAY
         </a>
 </div>
@@ -361,7 +361,7 @@ export default function Home() {
 <img alt="Xe hop dong Ha Tinh" className="w-full object-contain h-36" src="/images/6.jpg"/>
 </div>
 </div>
-<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0812444555">
+<a className="w-full block text-center py-2.5 rounded-lg bg-[#00a859] hover:bg-[#008f4c] text-white text-xs font-bold tracking-wider uppercase transition" href="tel:0963726995">
           XEM CHI TIẾT
         </a>
 </div>
@@ -511,7 +511,7 @@ export default function Home() {
             Giảm ngay <span className="text-amber-300 font-black text-xl">10%</span> cước chuyến đi cho khách hàng đặt xe lần đầu qua Hotline!
           </p>
 <div className="pt-2">
-<a className="inline-flex items-center gap-3 bg-white text-[#008f4c] font-black px-6 py-3 rounded-full text-xs uppercase shadow hover:bg-emerald-50 hover:scale-105 transition" href="tel:0812444555">
+<a className="inline-flex items-center gap-3 bg-white text-[#008f4c] font-black px-6 py-3 rounded-full text-xs uppercase shadow hover:bg-emerald-50 hover:scale-105 transition" href="tel:0963726995">
 <span>ĐẶT XE NGAY</span>
 <i className="fa-solid fa-arrow-right"></i>
 </a>
@@ -683,12 +683,12 @@ export default function Home() {
 <div>
 <span className="text-xs uppercase font-semibold text-emerald-100 tracking-wider">CẦN HỖ TRỢ? GỌI NGAY CHO CHÚNG TÔI</span>
 <div className="text-2xl sm:text-3xl font-black tracking-tight leading-none mt-0.5">
-            0812 444 555 <span className="text-xs font-normal text-emerald-100 ml-2">(Tổng đài hoạt động 24/7)</span>
+            0963 726 995 <span className="text-xs font-normal text-emerald-100 ml-2">(Tổng đài hoạt động 24/7)</span>
 </div>
 </div>
 </div>
 <div className="flex items-center gap-4">
-<a className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-extrabold px-6 py-3 rounded-full text-xs uppercase shadow-md flex items-center gap-2 transition" href="tel:0812444555">
+<a className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-extrabold px-6 py-3 rounded-full text-xs uppercase shadow-md flex items-center gap-2 transition" href="tel:0963726995">
 <span>LIÊN HỆ NGAY</span>
 <i className="fa-solid fa-phone"></i>
 </a>

@@ -83,9 +83,9 @@ export default function DichVu() {
             Cung cấp giải pháp di chuyển linh hoạt, an toàn, chuẩn mực từ taxi gia đình, xe điện thông minh đến xe hợp đồng du lịch và đưa đón sân bay trọn gói. Phục vụ 24/7 với tác phong chuẩn mực.
           </p>
 <div className="flex flex-wrap items-center gap-space-md pt-2">
-<a className="inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md shadow-md hover:bg-[#008744] transition-all" href="tel:0812444555">
+<a className="inline-flex items-center justify-center gap-2 px-space-xl py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md shadow-md hover:bg-[#008744] transition-all" href="tel:0963726995">
 <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
-<span>Tổng Đài 24/7: 0812 444 555</span>
+<span>Tổng Đài 24/7: 0963 726 995</span>
 </a>
 <a className="inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-xl bg-surface-container-highest text-[#008744] font-label-md text-label-md hover:bg-surface-container-high transition-all" href="#booking-section">
 <span className="material-symbols-outlined text-[20px]">calendar_month</span>
@@ -323,7 +323,7 @@ export default function DichVu() {
 </div>
 </div>
 <div className="p-space-lg pt-0">
-<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0812444555">
+<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0963726995">
 <span className="material-symbols-outlined text-[18px]">airport_shuttle</span> Nhận Báo Giá Tour
           </a>
 </div>
@@ -362,7 +362,7 @@ export default function DichVu() {
 </div>
 </div>
 <div className="p-space-lg pt-0">
-<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0812444555">
+<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0963726995">
 <span className="material-symbols-outlined text-[18px]">key</span> Đăng Ký Thuê Xe Tự Lái
           </a>
 </div>
@@ -401,7 +401,7 @@ export default function DichVu() {
 </div>
 </div>
 <div className="p-space-lg pt-0">
-<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0812444555">
+<a className="w-full py-3 rounded-xl bg-[#00a651] text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#008744] transition-all shadow-sm" href="tel:0963726995">
 <span className="material-symbols-outlined text-[18px]">emergency</span> Đặt Xe Khám Bệnh
           </a>
 </div>
@@ -534,7 +534,7 @@ export default function DichVu() {
 <span className="material-symbols-outlined text-[#00a651] text-[20px]">info</span>
 <span><strong>Lưu ý:</strong> Giá đã bao gồm phí cầu đường, nước khoáng Aquafina, khăn lạnh. Cam kết không phụ thu giờ cao điểm hay ngày mưa gió khi đặt trước.</span>
 </div>
-<div className="font-semibold text-[#008744]">Hỗ trợ hotline: 0812 444 555</div>
+<div className="font-semibold text-[#008744]">Hỗ trợ hotline: 0963 726 995</div>
 </div>
 </div>
 </div>
@@ -614,7 +614,7 @@ export default function DichVu() {
             </div>
 <h4 className="font-title text-title text-[#008744] font-bold mb-2">Liên Hệ Đặt Chuyến</h4>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
-              Gọi Hotline <strong className="text-[#008744]">0812 444 555</strong>, nhắn Zalo hoặc điền biểu mẫu trực tiếp trên website.
+              Gọi Hotline <strong className="text-[#008744]">0963 726 995</strong>, nhắn Zalo hoặc điền biểu mẫu trực tiếp trên website.
             </p>
 </div>
 <div className="pt-4 flex items-center text-[#008744] font-label-sm text-label-sm gap-1">
@@ -838,18 +838,18 @@ export default function DichVu() {
 <span className="material-symbols-outlined text-[16px]">call_received</span> Phục Vụ 24/7 Toàn Tỉnh Hà Tĩnh
           </div>
 <h3 className="font-headline-lg text-headline-lg font-bold">
-            CẦN XE GẤP HAY LÊN LỊCH TRÌNH ĐƯỜNG DÀI? GỌI NGAY 0812 444 555
+            CẦN XE GẤP HAY LÊN LỊCH TRÌNH ĐƯỜNG DÀI? GỌI NGAY 0963 726 995
           </h3>
 <p className="font-body-md text-body-md text-white/90">
             Tổng đài trực 24/7 cam kết điều xe nhanh nhất, tài xế niềm nở, đúng giờ và an toàn tuyệt đối trên mọi cung đường.
           </p>
 </div>
 <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto shrink-0">
-<a className="w-full sm:w-auto px-6 py-3 rounded-full bg-white text-[#008744] hover:bg-emerald-50 font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95" href="tel:0812444555">
+<a className="w-full sm:w-auto px-6 py-3 rounded-full bg-white text-[#008744] hover:bg-emerald-50 font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95" href="tel:0963726995">
 <span className="material-symbols-outlined text-[20px]">call</span>
-<span>GỌI NGAY 0812 444 555</span>
+<span>GỌI NGAY 0963 726 995</span>
 </a>
-<a className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#e8f8f0] hover:bg-white text-[#008744] font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 border border-[#00a651]/20" href="https://zalo.me/0812444555" rel="noopener noreferrer" target="_blank">
+<a className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#e8f8f0] hover:bg-white text-[#008744] font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 border border-[#00a651]/20" href="https://zalo.me/0963726995" rel="noopener noreferrer" target="_blank">
 <span className="material-symbols-outlined text-[20px]">chat</span>
 <span>Chat Zalo Báo Giá</span>
 </a>

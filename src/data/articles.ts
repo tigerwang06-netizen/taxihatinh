@@ -85,7 +85,7 @@ export const ARTICLES: Article[] = [
           ]
         }
       ],
-      conclusion: "Đặt trước dịch vụ taxi sân bay Vinh - Hà Tĩnh trọn gói mang lại sự an tâm tuyệt đối về thời gian và chi phí. Hãy gọi ngay Hotline 0812 444 555 để nhận mã giảm giá và giữ lịch xe đời mới ngay hôm nay!"
+      conclusion: "Đặt trước dịch vụ taxi sân bay Vinh - Hà Tĩnh trọn gói mang lại sự an tâm tuyệt đối về thời gian và chi phí. Hãy gọi ngay Hotline 0963 726 995 để nhận mã giảm giá và giữ lịch xe đời mới ngay hôm nay!"
     }
   },
   {
@@ -179,7 +179,7 @@ export const ARTICLES: Article[] = [
           ]
         }
       ],
-      conclusion: "Hãy trải nghiệm ngay dịch vụ xe điện xanh VinFast tại Hà Tĩnh bằng cách liên hệ tổng đài 0812 444 555 để cảm nhận sự khác biệt của phương tiện tương lai!"
+      conclusion: "Hãy trải nghiệm ngay dịch vụ xe điện xanh VinFast tại Hà Tĩnh bằng cách liên hệ tổng đài 0963 726 995 để cảm nhận sự khác biệt của phương tiện tương lai!"
     }
   },
   {
@@ -213,7 +213,7 @@ export const ARTICLES: Article[] = [
           highlight: "Luôn dặn trước tổng đài viên nếu trên xe có bệnh nhân cần xe gầm thấp dễ lên xuống hoặc cần khoang chứa xe lăn gấp gọn."
         }
       ],
-      conclusion: "Chăm sóc sức khỏe gia đình không thể chậm trễ. Đặt xe trước qua số 0812 444 555 để tài xế phục vụ chu đáo nhất."
+      conclusion: "Chăm sóc sức khỏe gia đình không thể chậm trễ. Đặt xe trước qua số 0963 726 995 để tài xế phục vụ chu đáo nhất."
     }
   },
   {
@@ -247,7 +247,7 @@ export const ARTICLES: Article[] = [
           highlight: "Ưu đãi chiết khấu 10% - 15% cho các hợp đồng đưa đón dài hạn trên 6 tháng."
         }
       ],
-      conclusion: "Liên hệ Hotline điều hành 0812 444 555 để nhận báo giá chi tiết và hồ sơ năng lực doanh nghiệp."
+      conclusion: "Liên hệ Hotline điều hành 0963 726 995 để nhận báo giá chi tiết và hồ sơ năng lực doanh nghiệp."
     }
   },
   {
@@ -279,7 +279,7 @@ export const ARTICLES: Article[] = [
           body: [
             "Mỗi khi khách xuống xe, tài xế luôn nhắc nhở kiểm tra lại ví tiền, điện thoại, hành lý. Trường hợp khách để quên đồ, tài xế có trách nhiệm bàn giao lại cho tổng đài hoặc liên hệ trao trả tận tay khách hàng trong vòng 30 phút."
           ],
-          highlight: "Hotline hỗ trợ tìm đồ thất lạc hoạt động 24/7: 0812 444 555."
+          highlight: "Hotline hỗ trợ tìm đồ thất lạc hoạt động 24/7: 0963 726 995."
         }
       ],
       conclusion: "Chọn Taxi Lữ Khách Hà Tĩnh là chọn sự an tâm và tôn trọng trong từng khoảnh khắc di chuyển."

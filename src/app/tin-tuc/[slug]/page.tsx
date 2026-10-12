@@ -214,14 +214,14 @@ export default async function ArticleDetailPage({ params }: PageProps) {
                 </div>
                 <div className="flex flex-wrap items-center gap-3 pt-1">
                   <a
-                    href="tel:0812444555"
+                    href="tel:0963726995"
                     className="px-5 py-2.5 rounded-full bg-white text-[#008744] hover:bg-emerald-50 font-bold text-sm shadow-md transition-all flex items-center gap-2"
                   >
                     <span className="material-symbols-outlined text-[18px]">phone_in_talk</span>
-                    <span>GỌI HOTLINE: 0812 444 555</span>
+                    <span>GỌI HOTLINE: 0963 726 995</span>
                   </a>
                   <a
-                    href="https://zalo.me/0812444555"
+                    href="https://zalo.me/0963726995"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-5 py-2.5 rounded-full bg-[#e8f8f0] text-[#008744] hover:bg-white font-bold text-sm shadow-sm transition-all flex items-center gap-2"
@@ -270,18 +270,18 @@ export default async function ArticleDetailPage({ params }: PageProps) {
                 </div>
                 <div>
                   <div className="text-xs text-white/80">Hotline Điều Phối Toàn Tỉnh:</div>
-                  <a className="text-3xl font-extrabold tracking-wide text-white block hover:underline" href="tel:0812444555">
-                    0812 444 555
+                  <a className="text-3xl font-extrabold tracking-wide text-white block hover:underline" href="tel:0963726995">
+                    0963 726 995
                   </a>
                 </div>
                 <p className="text-xs text-white/90 leading-relaxed">
                   Nhận đón khách tận nơi tại 13 huyện, thị xã, thành phố của Hà Tĩnh. Có hóa đơn đỏ VAT cho công ty.
                 </p>
                 <div className="pt-2 flex items-center gap-2">
-                  <a className="flex-1 py-2.5 rounded-xl bg-[#00a651] hover:bg-[#008744] text-white text-center text-xs font-bold transition-colors shadow-sm" href="tel:0812444555">
+                  <a className="flex-1 py-2.5 rounded-xl bg-[#00a651] hover:bg-[#008744] text-white text-center text-xs font-bold transition-colors shadow-sm" href="tel:0963726995">
                     Gọi Tổng Đài
                   </a>
-                  <a className="px-5 py-2.5 rounded-xl bg-white text-[#008744] text-center text-xs font-bold hover:bg-[#e8f8f0] transition-colors shadow-sm" href="https://zalo.me/0812444555" target="_blank" rel="noopener noreferrer">
+                  <a className="px-5 py-2.5 rounded-xl bg-white text-[#008744] text-center text-xs font-bold hover:bg-[#e8f8f0] transition-colors shadow-sm" href="https://zalo.me/0963726995" target="_blank" rel="noopener noreferrer">
                     Zalo
                   </a>
                 </div>

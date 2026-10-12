@@ -114,7 +114,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("API Booking Error:", error);
     return NextResponse.json(
-      { success: false, error: "Đã xảy ra sự cố trong quá trình tiếp nhận. Quý khách vui lòng gọi trực tiếp hotline 0812 444 555." },
+      { success: false, error: "Đã xảy ra sự cố trong quá trình tiếp nhận. Quý khách vui lòng gọi trực tiếp hotline 0963 726 995." },
       { status: 500 }
     );
   }

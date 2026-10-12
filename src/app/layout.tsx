@@ -24,10 +24,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://taxilukhachhatinh.c
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài Đặt Xe 24/7 Toàn Tỉnh [0812 444 555]",
+    default: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài Đặt Xe 24/7 Toàn Tỉnh [0963 726 995]",
     template: "%s | Taxi Lữ Khách Hà Tĩnh",
   },
-  description: "Tổng đài Taxi Lữ Khách Hà Tĩnh - Đón nhanh 5-10 phút tại 13 huyện thị Hà Tĩnh. Taxi 4 chỗ, 7 chỗ đời mới 2022-2025, xe điện VinFast, xe đưa đón Sân bay Vinh trọn gói từ 450k, thuê xe tự lái và xe hợp đồng du lịch. Gọi ngay 0812 444 555.",
+  description: "Tổng đài Taxi Lữ Khách Hà Tĩnh - Đón nhanh 5-10 phút tại 13 huyện thị Hà Tĩnh. Taxi 4 chỗ, 7 chỗ đời mới 2022-2025, xe điện VinFast, xe đưa đón Sân bay Vinh trọn gói từ 450k, thuê xe tự lái và xe hợp đồng du lịch. Gọi ngay 0963 726 995.",
   keywords: [
     "taxi hà tĩnh",
     "taxi lữ khách hà tĩnh",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài Đặt Xe 24/7 Toàn Tỉnh [0812 444 555]",
+    title: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài Đặt Xe 24/7 Toàn Tỉnh [0963 726 995]",
     description: "Hệ thống taxi gia đình, xe điện thông minh và đưa đón sân bay Vinh trọn gói tại 13 huyện thị Hà Tĩnh. Đón đúng giờ, giá niêm yết minh bạch, giảm 40% chiều về.",
     url: siteUrl,
     siteName: "Taxi Lữ Khách Hà Tĩnh",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài 24/7 [0812 444 555]",
+    title: "Taxi Lữ Khách Hà Tĩnh - Tổng Đài 24/7 [0963 726 995]",
     description: "Đón xe nhanh 5-10 phút tại Hà Tĩnh. Xe đời mới 2022-2025, giảm 40% cước khứ hồi.",
     images: ["/images/31.jpg"],
   },
@@ -94,11 +94,11 @@ const jsonLd = {
   "image": `${siteUrl}/images/31.jpg`,
   "@id": `${siteUrl}/#organization`,
   "url": siteUrl,
-  "telephone": "0812444555",
+  "telephone": "0963726995",
   "priceRange": "10.000đ - 1.200.000đ",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "TP. Hà Tĩnh",
+    "streetAddress": "86 Nguyễn Biểu, Thành Sen, Hà Tĩnh",
     "addressLocality": "Hà Tĩnh",
     "addressRegion": "Hà Tĩnh",
     "postalCode": "480000",

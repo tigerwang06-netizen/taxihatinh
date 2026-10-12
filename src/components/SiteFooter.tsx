@@ -21,7 +21,7 @@ export function SiteFooter() {
                 <a className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#00a859] transition flex items-center justify-center" href="#" aria-label="Facebook">
                   <i className="fa-brands fa-facebook-f text-xs"></i>
                 </a>
-                <a className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#00a859] transition flex items-center justify-center text-[10px] font-bold" href="https://zalo.me/0812444555" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
+                <a className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#00a859] transition flex items-center justify-center text-[10px] font-bold" href="https://zalo.me/0963726995" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
                   Zalo
                 </a>
                 <a className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#00a859] transition flex items-center justify-center" href="#" aria-label="YouTube">
@@ -63,11 +63,11 @@ export function SiteFooter() {
               <ul className="space-y-2.5 text-gray-400 text-[11px]">
                 <li className="flex items-start gap-2">
                   <i className="fa-solid fa-location-dot text-emerald-400 mt-0.5"></i>
-                  <span>45 Trần Phú, TP. Hà Tĩnh, Tỉnh Hà Tĩnh</span>
+                  <span>86 Nguyễn Biểu, Thành Sen, Hà Tĩnh</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <i className="fa-solid fa-phone text-emerald-400"></i>
-                  <a href="tel:0812444555" className="text-white font-bold hover:text-emerald-400 transition">0812 444 555</a>
+                  <a href="tel:0963726995" className="text-white font-bold hover:text-emerald-400 transition">0963 726 995</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <i className="fa-solid fa-envelope text-emerald-400"></i>
@@ -92,7 +92,7 @@ export function SiteFooter() {
 
           <div className="pt-6 text-center text-gray-400 text-[11px]">
             © 2026 Taxi Lữ Khách Hà Tĩnh – Đẳng cấp phục vụ – Uy tín hàng đầu. Hotline:{" "}
-            <a href="tel:0812444555" className="text-white font-bold hover:underline">0812 444 555</a>. All rights reserved.
+            <a href="tel:0963726995" className="text-white font-bold hover:underline">0963 726 995</a>. All rights reserved.
           </div>
         </div>
       </footer>
@@ -101,14 +101,14 @@ export function SiteFooter() {
       <div className="fixed bottom-6 right-6 z-50">
         <a
           className="relative group flex items-center justify-center w-14 h-14 bg-[#00a859] hover:bg-[#008f4c] text-white rounded-full shadow-2xl transition duration-300"
-          href="tel:0812444555"
+          href="tel:0963726995"
           aria-label="Gọi ngay tổng đài"
         >
           <span className="absolute inset-0 rounded-full border-2 border-emerald-500 animate-ping opacity-75 pointer-events-none"></span>
           <i className="fa-solid fa-phone-volume text-xl animate-pulse"></i>
 
           <span className="absolute right-16 bg-gray-900 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow pointer-events-none">
-            Gọi ngay: 0812 444 555
+            Gọi ngay: 0963 726 995
           </span>
         </a>
       </div>
