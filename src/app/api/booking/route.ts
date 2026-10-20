@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { sendBookingNotificationEmail } from "@/lib/mailer";
 
 export async function POST(request: Request) {
   try {
@@ -104,6 +105,24 @@ export async function POST(request: Request) {
       }
     } else {
       console.log(`[BOOKING #${bookingId}] Khách: ${cleanName} | SĐT: ${cleanPhone} | Đón: ${bookingData.pickup} -> Đến: ${bookingData.destination}`);
+    }
+
+    // 3. Gửi thông báo tự động tới Email (daiphatcar88@gmail.com)
+    try {
+      await sendBookingNotificationEmail({
+        bookingId,
+        fullName: cleanName,
+        phone: cleanPhone,
+        pickup: bookingData.pickup,
+        destination: bookingData.destination,
+        serviceType: bookingData.serviceType,
+        pickupTime: bookingData.pickupTime,
+        note: bookingData.note,
+        sourcePage: bookingData.sourcePage,
+        createdAt,
+      });
+    } catch (emailErr) {
+      console.error("Lỗi gửi email thông báo đặt xe:", emailErr);
     }
 
     return NextResponse.json({
