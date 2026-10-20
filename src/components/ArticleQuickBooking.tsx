@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { submitBooking, openZaloChat, copyBookingToClipboard, BookingPayload } from "@/lib/booking";
+import { submitBooking, BookingPayload } from "@/lib/booking";
 
 interface ArticleQuickBookingProps {
   articleTitle: string;
@@ -19,7 +19,6 @@ export default function ArticleQuickBooking({ articleTitle }: ArticleQuickBookin
   const [bookingCode, setBookingCode] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [lastPayload, setLastPayload] = useState<BookingPayload | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,10 +42,8 @@ export default function ArticleQuickBooking({ articleTitle }: ArticleQuickBookin
 
     setIsSubmitting(false);
     if (res.success) {
-      setLastPayload(payload);
       setFormSubmitted(true);
       setBookingCode(res.bookingId);
-      openZaloChat(payload, res.bookingId);
       setFormData({
         fullName: "",
         phone: "",
@@ -54,7 +51,7 @@ export default function ArticleQuickBooking({ articleTitle }: ArticleQuickBookin
         destination: "",
         carType: "Xe 4 chỗ sedan",
       });
-      setTimeout(() => setFormSubmitted(false), 25000);
+      setTimeout(() => setFormSubmitted(false), 20000);
     } else {
       setErrorMessage(res.error || "Gửi yêu cầu không thành công.");
     }
@@ -146,24 +143,12 @@ export default function ArticleQuickBooking({ articleTitle }: ArticleQuickBookin
         )}
 
         {formSubmitted && (
-          <div className="text-center text-xs text-[#008744] bg-[#e8f8f0] p-3 rounded-xl border border-[#00a651]/40 space-y-2 shadow-sm animate-fade-in">
+          <div className="text-center text-xs text-[#008744] bg-[#e8f8f0] p-3 rounded-xl border border-[#00a651]/40 space-y-1.5 shadow-sm animate-fade-in">
             <div className="font-bold flex items-center justify-center gap-1.5">
               <span className="material-symbols-outlined text-[18px]">check_circle</span>
               <span>Đặt xe thành công! Mã: <span className="font-mono bg-white px-1.5 py-0.5 rounded border border-[#00a651]/30">#{bookingCode}</span></span>
             </div>
-            <p className="text-[11px] text-secondary">
-              Bấm nút bên dưới để gửi tin qua <strong>Zalo 0963 726 995</strong> nhận xe nhanh:
-            </p>
-            <a
-              href="https://zalo.me/0963726995"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => lastPayload && copyBookingToClipboard(lastPayload, bookingCode)}
-              className="w-full py-2.5 px-3 rounded-lg bg-[#0068ff] hover:bg-[#0054cc] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition-all active:scale-95"
-            >
-              <span className="material-symbols-outlined text-[16px]">chat</span>
-              <span>Gửi thông tin qua Zalo 0963 726 995</span>
-            </a>
+            <div className="font-normal text-secondary text-[11px]">Tổng đài viên sẽ gọi lại cho quý khách trong 1-3 phút.</div>
           </div>
         )}
       </form>
