@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { submitBooking } from "@/lib/booking";
+import { submitBooking, openZaloChat, copyBookingToClipboard, BookingPayload } from "@/lib/booking";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("taxi");
@@ -16,6 +16,7 @@ export default function Home() {
   const [bookingCode, setBookingCode] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [lastPayload, setLastPayload] = useState<BookingPayload | null>(null);
 
   const handleHeroSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +33,7 @@ export default function Home() {
       hopdong: "Xe Hợp Đồng Du Lịch",
     };
 
-    const res = await submitBooking({
+    const payload: BookingPayload = {
       pickup: heroForm.pickup,
       destination: heroForm.destination,
       phone: heroForm.phone,
@@ -40,12 +41,17 @@ export default function Home() {
       carType: heroForm.carType,
       pickupTime: heroForm.pickupTime,
       sourcePage: `Trang Chủ - Hero (${tabLabels[activeTab]})`,
-    });
+    };
+
+    const res = await submitBooking(payload);
 
     setIsSubmitting(false);
     if (res.success) {
+      setLastPayload(payload);
       setFormSubmitted(true);
       setBookingCode(res.bookingId);
+      // Tự động mở Zalo và sao chép thông tin đặt xe
+      openZaloChat(payload, res.bookingId);
       setHeroForm({
         pickup: "TP. Hà Tĩnh",
         destination: "",
@@ -53,7 +59,7 @@ export default function Home() {
         pickupTime: "",
         carType: "Tất cả xe",
       });
-      setTimeout(() => setFormSubmitted(false), 9000);
+      setTimeout(() => setFormSubmitted(false), 25000);
     } else {
       setErrorMessage(res.error || "Gửi yêu cầu không thành công.");
     }
@@ -278,14 +284,33 @@ export default function Home() {
       )}
 
       {formSubmitted && (
-        <div className="mt-3 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-center space-y-1">
-          <div className="text-emerald-800 font-bold text-xs sm:text-sm flex items-center justify-center gap-2">
+        <div className="mt-3 p-3.5 sm:p-4 bg-emerald-50/95 border-2 border-emerald-400 rounded-xl text-center space-y-2.5 shadow-sm animate-fade-in">
+          <div className="text-emerald-900 font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2">
             <i className="fa-solid fa-circle-check text-[#00a859] text-base"></i>
-            <span>Đặt chuyến thành công! Mã chuyến: <strong className="font-mono bg-white px-2 py-0.5 rounded border border-emerald-300">{bookingCode}</strong></span>
+            <span>Tiếp nhận thành công! Mã chuyến: <strong className="font-mono bg-white px-2 py-0.5 rounded border border-emerald-300 text-[#008f4c]">#{bookingCode}</strong></span>
           </div>
-          <p className="text-[11px] text-gray-600">
-            Tổng đài viên Taxi Lữ Khách Hà Tĩnh sẽ liên hệ số điện thoại của quý khách ngay trong 1-3 phút để xác nhận tài xế đón.
+          <p className="text-[11px] sm:text-xs text-gray-700 leading-relaxed max-w-lg mx-auto">
+            Hệ thống đã lưu thông tin chuyến xe. Hãy bấm nút dưới đây để gửi ngay qua <strong>Zalo 0963 726 995</strong> nhận xác nhận tài xế trong 30 giây:
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <a
+              href="https://zalo.me/0963726995"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => lastPayload && copyBookingToClipboard(lastPayload, bookingCode)}
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#0068ff] hover:bg-[#0054cc] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-95"
+            >
+              <i className="fa-solid fa-comment-dots text-sm"></i>
+              <span>GỬI THÔNG TIN QUA ZALO (0963 726 995)</span>
+            </a>
+            <a
+              href="tel:0963726995"
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-white hover:bg-gray-50 text-[#008f4c] font-bold text-xs sm:text-sm border border-emerald-300 shadow-sm transition-all"
+            >
+              <i className="fa-solid fa-phone text-xs"></i>
+              <span>Gọi 0963 726 995</span>
+            </a>
+          </div>
         </div>
       )}
     </form>

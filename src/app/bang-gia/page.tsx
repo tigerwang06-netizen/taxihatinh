@@ -333,18 +333,26 @@ export default function BangGia() {
                 {/* Action Buttons */}
                 <div className="space-y-2.5 pt-2">
                   <a
-                    className="w-full h-12 bg-primary hover:bg-[#008744] text-on-primary rounded-xl font-label-md text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
-                    href="tel:0963726995"
+                    className="w-full h-12 bg-[#0068ff] hover:bg-[#0054cc] text-white rounded-xl font-label-md text-sm flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all active:scale-[0.98]"
+                    href="https://zalo.me/0963726995"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      const msg = `🚕 ĐẶT XE THEO BẢNG GIÁ TAXI LỮ KHÁCH HÀ TĨNH\n━━━━━━━━━━━━━━━━━━\n📍 Điểm đón: ${currentPickup.label}\n🏁 Điểm đến: ${currentDest.label} (~${totalKm} km)\n🚗 Loại xe: ${currentVehicle.carName}\n🔄 Hình thức: ${tripType === 2 ? 'Khứ hồi 2 chiều' : 'Đi 1 chiều'}\n💰 Cước dự toán: ${totalPrice.toLocaleString('vi-VN')}đ (Trọn gói)\n━━━━━━━━━━━━━━━━━━\nXin vui lòng báo giá và xếp xe giúp tôi. Cảm ơn!`;
+                      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                        navigator.clipboard.writeText(msg).catch(() => {});
+                      }
+                    }}
                   >
-                    <span className="material-symbols-outlined text-lg">calendar_today</span>
-                    <span>Đặt Xe Ngay Theo Giá Này</span>
+                    <span className="material-symbols-outlined text-lg">chat</span>
+                    <span>Gửi Lộ Trình Này Qua Zalo (0963 726 995)</span>
                   </a>
                   <a
-                    className="w-full h-11 bg-white hover:bg-surface-container-lowest text-primary rounded-xl font-label-md text-xs flex items-center justify-center gap-2 transition-all shadow-sm"
+                    className="w-full h-11 bg-primary hover:bg-[#008744] text-white rounded-xl font-label-md text-xs flex items-center justify-center gap-2 transition-all shadow-sm"
                     href="tel:0963726995"
                   >
                     <span className="material-symbols-outlined text-base">phone_in_talk</span>
-                    <span>Gọi Tổng Đài Báo Giá: 0963 726 995</span>
+                    <span>Gọi Tổng Đài Đặt Ngay: 0963 726 995</span>
                   </a>
                 </div>
               </div>

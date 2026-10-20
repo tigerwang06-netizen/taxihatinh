@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import { submitBooking } from "@/lib/booking";
+import { submitBooking, openZaloChat, copyBookingToClipboard, BookingPayload } from "@/lib/booking";
 
 export default function DichVu() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -18,6 +18,7 @@ export default function DichVu() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [bookingCode, setBookingCode] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [lastPayload, setLastPayload] = useState<BookingPayload | null>(null);
 
   const handleServiceSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ export default function DichVu() {
     setIsSubmitting(true);
     setErrorMessage("");
 
-    const res = await submitBooking({
+    const payload: BookingPayload = {
       fullName: formData.fullName,
       phone: formData.phone,
       serviceType: formData.serviceType,
@@ -36,12 +37,16 @@ export default function DichVu() {
       pickup: formData.pickup,
       destination: formData.destination,
       sourcePage: "Trang Dịch Vụ",
-    });
+    };
+
+    const res = await submitBooking(payload);
 
     setIsSubmitting(false);
     if (res.success) {
+      setLastPayload(payload);
       setFormSubmitted(true);
       setBookingCode(res.bookingId);
+      openZaloChat(payload, res.bookingId);
       setFormData({
         fullName: "",
         phone: "",
@@ -50,7 +55,7 @@ export default function DichVu() {
         pickup: "",
         destination: "",
       });
-      setTimeout(() => setFormSubmitted(false), 9000);
+      setTimeout(() => setFormSubmitted(false), 25000);
     } else {
       setErrorMessage(res.error || "Gửi yêu cầu không thành công.");
     }
@@ -811,14 +816,33 @@ export default function DichVu() {
   )}
 
   {formSubmitted && (
-    <div className="p-4 bg-[#e8f8f0] border border-[#00a651]/30 rounded-xl text-center space-y-1">
-      <div className="text-[#008744] font-bold text-base flex items-center justify-center gap-2">
-        <span className="material-symbols-outlined text-[20px]">check_circle</span>
-        Đặt xe thành công! Mã chuyến: <span className="font-mono bg-white px-2 py-0.5 rounded border border-[#00a651]/30">{bookingCode}</span>
+    <div className="p-4 sm:p-5 bg-[#e8f8f0] border-2 border-[#00a651] rounded-2xl text-center space-y-2.5 shadow-sm animate-fade-in">
+      <div className="text-[#008744] font-extrabold text-base sm:text-lg flex items-center justify-center gap-2">
+        <span className="material-symbols-outlined text-[24px]">check_circle</span>
+        <span>Đặt dịch vụ thành công! Mã: <strong className="font-mono bg-white px-2 py-0.5 rounded border border-[#00a651]/30">#{bookingCode}</strong></span>
       </div>
-      <p className="text-body-sm text-secondary">
-        Tổng đài viên Taxi Lữ Khách Hà Tĩnh sẽ liên hệ quý khách qua điện thoại trong 1-3 phút để xác nhận tài xế đón.
+      <p className="text-body-sm text-secondary max-w-lg mx-auto">
+        Thông tin chuyến xe đã được ghi nhận. Hãy bấm nút dưới đây để gửi ngay qua <strong>Zalo 0963 726 995</strong> nhận xác nhận tài xế đón tức thì:
       </p>
+      <div className="flex flex-wrap items-center justify-center gap-3 pt-1">
+        <a
+          href="https://zalo.me/0963726995"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => lastPayload && copyBookingToClipboard(lastPayload, bookingCode)}
+          className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0068ff] hover:bg-[#0054cc] text-white font-bold text-sm shadow-md transition-all active:scale-95"
+        >
+          <span className="material-symbols-outlined text-[20px]">chat</span>
+          <span>GỬI THÔNG TIN QUA ZALO (0963 726 995)</span>
+        </a>
+        <a
+          href="tel:0963726995"
+          className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-gray-50 text-[#008744] font-bold text-sm border border-[#00a651]/40 shadow-sm transition-all"
+        >
+          <span className="material-symbols-outlined text-[20px]">call</span>
+          <span>Gọi 0963 726 995</span>
+        </a>
+      </div>
     </div>
   )}
 </form>

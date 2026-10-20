@@ -109,6 +109,7 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       bookingId,
+      zaloUrl: "https://zalo.me/0963726995",
       message: "Yêu cầu đặt xe đã được tiếp nhận thành công! Điều hành viên sẽ liên hệ lại với quý khách trong 30 giây - 3 phút.",
     });
   } catch (error) {

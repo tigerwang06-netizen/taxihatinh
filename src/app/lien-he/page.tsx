@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { submitBooking } from "@/lib/booking";
+import { submitBooking, openZaloChat, copyBookingToClipboard, BookingPayload } from "@/lib/booking";
 
 export default function LienHe() {
   const [formData, setFormData] = useState({
@@ -18,6 +18,7 @@ export default function LienHe() {
   const [bookingCode, setBookingCode] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [lastPayload, setLastPayload] = useState<BookingPayload | null>(null);
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,15 +29,19 @@ export default function LienHe() {
     setIsSubmitting(true);
     setErrorMessage("");
 
-    const res = await submitBooking({
+    const payload: BookingPayload = {
       ...formData,
       sourcePage: "Trang Liên Hệ",
-    });
+    };
+
+    const res = await submitBooking(payload);
 
     setIsSubmitting(false);
     if (res.success) {
+      setLastPayload(payload);
       setFormSubmitted(true);
       setBookingCode(res.bookingId);
+      openZaloChat(payload, res.bookingId);
       setFormData({
         fullName: "",
         phone: "",
@@ -45,7 +50,7 @@ export default function LienHe() {
         destination: "",
         note: "",
       });
-      setTimeout(() => setFormSubmitted(false), 8000);
+      setTimeout(() => setFormSubmitted(false), 25000);
     } else {
       setErrorMessage(res.error || "Gửi yêu cầu không thành công.");
     }
@@ -258,12 +263,36 @@ export default function LienHe() {
 )}
 </form>
 
-<div className="hidden mt-space-md p-space-md bg-secondary-container text-on-secondary-fixed rounded-xl flex items-center gap-space-sm" id="formSuccess">
-<span className="material-symbols-outlined text-2xl text-primary">check_circle</span>
-<div className="font-body-md text-body-md">
-<strong>Yêu cầu gửi thành công!</strong> Điều hành viên Taxi Lữ Khách Hà Tĩnh sẽ liên hệ quý khách qua số điện thoại vừa cung cấp.
-            </div>
-</div>
+      {formSubmitted && (
+        <div className="mt-space-md p-space-md bg-[#e8f8f0] border-2 border-[#00a651] rounded-2xl text-center space-y-2.5 shadow-sm animate-fade-in">
+          <div className="text-[#008744] font-extrabold text-base flex items-center justify-center gap-2">
+            <span className="material-symbols-outlined text-[24px]">check_circle</span>
+            <span>Gửi yêu cầu thành công! Mã: <strong className="font-mono bg-white px-2 py-0.5 rounded border border-[#00a651]/30">#{bookingCode}</strong></span>
+          </div>
+          <p className="text-body-sm text-on-surface-variant max-w-md mx-auto">
+            Hệ thống đã lưu thông tin chuyến xe. Hãy bấm nút dưới đây để gửi trực tiếp qua <strong>Zalo 0963 726 995</strong> nhận phản hồi tức thì:
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+            <a
+              href="https://zalo.me/0963726995"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => lastPayload && copyBookingToClipboard(lastPayload, bookingCode)}
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-[#0068ff] hover:bg-[#0054cc] text-white font-bold text-sm shadow-md transition-all active:scale-95"
+            >
+              <span className="material-symbols-outlined text-[18px]">chat</span>
+              <span>GỬI THÔNG TIN QUA ZALO (0963 726 995)</span>
+            </a>
+            <a
+              href="tel:0963726995"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white hover:bg-gray-50 text-[#008744] font-bold text-sm border border-[#00a651]/30 shadow-sm transition-all"
+            >
+              <span className="material-symbols-outlined text-[18px]">call</span>
+              <span>Gọi 0963 726 995</span>
+            </a>
+          </div>
+        </div>
+      )}
 </div>
 
 <div className="lg:col-span-5 space-y-space-lg">

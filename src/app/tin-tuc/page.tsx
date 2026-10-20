@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { submitBooking } from "@/lib/booking";
+import { submitBooking, openZaloChat, copyBookingToClipboard, BookingPayload } from "@/lib/booking";
 
 export default function TinTuc() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -20,6 +20,7 @@ export default function TinTuc() {
   const [sidebarSubmitted, setSidebarSubmitted] = useState(false);
   const [sidebarCode, setSidebarCode] = useState("");
   const [sidebarError, setSidebarError] = useState("");
+  const [lastPayload, setLastPayload] = useState<BookingPayload | null>(null);
 
   const handleSidebarSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,25 +31,29 @@ export default function TinTuc() {
     setSidebarSubmitting(true);
     setSidebarError("");
 
-    const res = await submitBooking({
+    const payload: BookingPayload = {
       pickup: sidebarForm.pickup,
       destination: sidebarForm.destination,
       phone: sidebarForm.phone,
       carType: sidebarForm.carType,
       sourcePage: "Trang Tin Tức - Sidebar",
-    });
+    };
+
+    const res = await submitBooking(payload);
 
     setSidebarSubmitting(false);
     if (res.success) {
+      setLastPayload(payload);
       setSidebarSubmitted(true);
       setSidebarCode(res.bookingId);
+      openZaloChat(payload, res.bookingId);
       setSidebarForm({
         pickup: "",
         destination: "",
         phone: "",
         carType: "Xe 4 - 5 chỗ",
       });
-      setTimeout(() => setSidebarSubmitted(false), 9000);
+      setTimeout(() => setSidebarSubmitted(false), 25000);
     } else {
       setSidebarError(res.error || "Gửi yêu cầu không thành công.");
     }
@@ -470,9 +475,24 @@ export default function TinTuc() {
   )}
 
   {sidebarSubmitted && (
-    <div className="text-center text-xs font-semibold text-[#008744] bg-[#e8f8f0] p-3 rounded-lg border border-[#00a651]/30 mt-2 space-y-1">
-      <div>Đã đặt xe thành công! Mã: <span className="font-mono bg-white px-1.5 py-0.5 rounded border border-[#00a651]/30">{sidebarCode}</span></div>
-      <div className="font-normal text-secondary">Tổng đài 0963 726 995 sẽ gọi xác nhận ngay trong 2 phút.</div>
+    <div className="text-center text-xs text-[#008744] bg-[#e8f8f0] p-3 rounded-xl border border-[#00a651]/40 mt-2 space-y-2 shadow-sm animate-fade-in">
+      <div className="font-bold flex items-center justify-center gap-1.5">
+        <span className="material-symbols-outlined text-[18px]">check_circle</span>
+        <span>Đặt xe thành công! Mã: <span className="font-mono bg-white px-1.5 py-0.5 rounded border border-[#00a651]/30">#{sidebarCode}</span></span>
+      </div>
+      <p className="text-[11px] text-secondary">
+        Bấm nút bên dưới để gửi tin qua <strong>Zalo 0963 726 995</strong> nhận xe nhanh:
+      </p>
+      <a
+        href="https://zalo.me/0963726995"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => lastPayload && copyBookingToClipboard(lastPayload, sidebarCode)}
+        className="w-full py-2 px-3 rounded-lg bg-[#0068ff] hover:bg-[#0054cc] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow transition-all active:scale-95"
+      >
+        <span className="material-symbols-outlined text-[16px]">chat</span>
+        <span>Gửi qua Zalo 0963 726 995</span>
+      </a>
     </div>
   )}
 </form>
