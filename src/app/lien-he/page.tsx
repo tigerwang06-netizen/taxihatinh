@@ -143,7 +143,7 @@ export default function LienHe() {
 <span className="material-symbols-outlined text-2xl">storefront</span>
 </div>
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Văn Phòng Điều Hành Chính</span>
-<h3 className="font-title text-title text-on-surface group-hover:text-primary transition-colors">86 Nguyễn Biểu, Thành Sen, Hà Tĩnh</h3>
+<h3 className="font-title text-title text-on-surface group-hover:text-primary transition-colors">Số 68 Nguyễn Văn Cừ, Trường Vinh, TP Vinh, Nghệ An</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Trung tâm điều phối các chuyến xe nội và ngoại tỉnh.</p>
 </div>
 <div className="mt-space-md pt-space-sm border-t border-surface-container flex items-center justify-between text-secondary font-label-sm text-label-sm">

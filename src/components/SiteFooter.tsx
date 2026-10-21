@@ -63,7 +63,7 @@ export function SiteFooter() {
               <ul className="space-y-2.5 text-gray-400 text-[11px]">
                 <li className="flex items-start gap-2">
                   <i className="fa-solid fa-location-dot text-emerald-400 mt-0.5"></i>
-                  <span>86 Nguyễn Biểu, Thành Sen, Hà Tĩnh</span>
+                  <span>Số 68 Nguyễn Văn Cừ, Trường Vinh, TP Vinh, Nghệ An</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <i className="fa-solid fa-phone text-emerald-400"></i>

@@ -100,10 +100,10 @@ const jsonLd = {
   "priceRange": "10.000đ - 1.200.000đ",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "86 Nguyễn Biểu, Thành Sen, Hà Tĩnh",
-    "addressLocality": "Hà Tĩnh",
-    "addressRegion": "Hà Tĩnh",
-    "postalCode": "480000",
+    "streetAddress": "Số 68 Nguyễn Văn Cừ, Trường Vinh, TP Vinh, Nghệ An",
+    "addressLocality": "TP Vinh",
+    "addressRegion": "Nghệ An",
+    "postalCode": "430000",
     "addressCountry": "VN",
   },
   "geo": {
